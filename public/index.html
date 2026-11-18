@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="La bitácora personal de Diogo Amir Flores Vásquez. Familia, Ingeniería de Sistemas y viajes desde Nuevo Chimbote, Perú.">
+  <meta name="theme-color" content="#f9f7f4">
+  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="./assets/theme.js"></script>
+  <script src="./assets/site.js" defer></script>
+  <title>Diogo Flores | Blog personal</title>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div id="inicio" class="page-top"></div>
+  <header class="site-header">
+    <div class="wrap topbar">
+      <a class="brand" href="#inicio" aria-label="Diogo Flores, inicio"><span class="brand-mark" aria-hidden="true">df.</span><span>Diogo Flores<small>Blog personal</small></span></a>
+      <nav class="site-nav" id="navegacion" aria-label="Navegación principal">
+        <a href="#inicio" aria-current="location">Inicio</a><a href="#bitacora">Bitácora</a><a href="#sobre-mi">Sobre mí</a><a href="#viajes">Viajes</a><a href="#galeria">Galería</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button theme-button" type="button" aria-label="Activar tema oscuro" aria-pressed="false" hidden><span class="theme-icon" aria-hidden="true"></span></button>
+        <button class="icon-button menu-button" type="button" aria-label="Abrir menú" aria-controls="navegacion" aria-expanded="false" hidden><span class="menu-icon" aria-hidden="true"></span></button>
+      </div>
+    </div>
+    <span class="progress" aria-hidden="true"></span>
+  </header>
+  <main id="contenido">
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="location"><span class="location-dot" aria-hidden="true"></span> NUEVO CHIMBOTE, PERÚ</p>
+        <h1 id="hero-title">Hola, soy<br><em>Diogo Flores.</em></h1>
+        <p class="hero-intro">Soy Diogo Amir Flores Vásquez y estoy terminando Ingeniería de Sistemas e Informática en la Universidad Nacional del Santa. Aquí escribo sobre mi familia, lo que aprendo y los lugares que voy conociendo.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#bitacora">Leer la bitácora <span class="arrow-diagonal" aria-hidden="true"></span></a>
+          <a class="button button-text" href="#sobre-mi">Conóceme <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="feature-rack" aria-label="Momentos destacados">
+        <a class="feature-panel feature-diogo is-active" href="#sobre-mi" aria-label="Diogo Flores, sobre mí">
+          <img src="./assets/diogo.webp" alt="" width="860" height="1078" fetchpriority="high">
+          <span class="feature-caption"><span>Sobre mí</span><strong>Diogo Flores</strong></span>
+        </a>
+        <a class="feature-panel feature-family" href="./bitacora/mi-familia.html" aria-label="Mi familia, leer entrada">
+          <img src="./assets/familia.webp" alt="" width="1280" height="720">
+          <span class="feature-caption"><span>Familia</span><strong>Mi gente</strong></span>
+        </a>
+        <a class="feature-panel feature-angie" href="./bitacora/viajes-con-angie.html" aria-label="Con Angie, leer entrada de viajes">
+          <img src="./assets/angie.webp" alt="" width="1280" height="960">
+          <span class="feature-caption"><span>Viajes</span><strong>Con Angie</strong></span>
+        </a>
+        <a class="feature-panel feature-gym" href="#galeria" aria-label="Fuera de clases, abrir el álbum">
+          <img src="./assets/entreno.webp" alt="" width="720" height="1280">
+          <span class="feature-caption"><span>Álbum personal</span><strong>Fuera de clases</strong></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="stories section-pad" id="bitacora" aria-labelledby="stories-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><h2 id="stories-title">La <em>bitácora.</em></h2><p>Historias de casa, de la universidad y de los viajes con Angie.</p></div>
+          <div class="filters" role="group" aria-label="Filtrar entradas" hidden>
+            <button type="button" data-filter="todas" aria-pressed="true">Todas</button>
+            <button type="button" data-filter="familia" aria-pressed="false">Familia</button>
+            <button type="button" data-filter="estudios" aria-pressed="false">Estudios</button>
+            <button type="button" data-filter="viajes" aria-pressed="false">Viajes</button>
+          </div>
+        </div>
+        <p class="sr-only" id="filter-result" aria-live="polite"></p>
+        <div class="story-grid">
+          <article class="story-card reveal" data-category="familia">
+            <a href="./bitacora/mi-familia.html" aria-labelledby="story-family">
+              <div class="story-photo photo-family"><img src="./assets/familia.webp" alt="Una celebración de cumpleaños con mi familia" width="1280" height="720" loading="lazy"></div>
+              <div class="story-copy"><p class="story-topic">Familia</p><h3 id="story-family">Mi familia, mi punto de partida</h3><p>Mis papás, mis hermanos y el lugar donde empezó mi historia.</p><span class="story-open">Leer entrada <span class="arrow-diagonal" aria-hidden="true"></span></span></div>
+            </a>
+          </article>
+          <article class="story-card reveal" data-category="estudios">
+            <a href="./bitacora/en-la-uns.html" aria-labelledby="story-uns">
+              <div class="story-photo photo-uns"><img src="./assets/lugares/uns.webp" width="1280" height="853" alt="Vista exterior de la Biblioteca Central de la Universidad Nacional del Santa" loading="lazy"></div>
+              <div class="story-copy"><p class="story-topic">Estudios</p><h3 id="story-uns">La recta final en la UNS</h3><p>De mis días en el colegio al décimo ciclo de Ingeniería de Sistemas e Informática.</p><span class="story-open">Leer entrada <span class="arrow-diagonal" aria-hidden="true"></span></span></div>
+            </a>
+          </article>
+          <article class="story-card reveal" data-category="viajes">
+            <a href="./bitacora/viajes-con-angie.html" aria-labelledby="story-travel">
+              <div class="story-photo photo-travel"><img src="./assets/lugares/tuquillo.webp" width="958" height="1440" alt="Pozas naturales en la zona de Tuquillo, Huarmey" loading="lazy"></div>
+              <div class="story-copy"><p class="story-topic">Viajes</p><h3 id="story-travel">De viaje con Angie</h3><p>De Huaraz y las playas de Áncash a una lista de destinos que sigue creciendo.</p><span class="story-open">Leer entrada <span class="arrow-diagonal" aria-hidden="true"></span></span></div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap about section-pad" id="sobre-mi" aria-labelledby="about-title">
+      <figure class="about-photo reveal">
+        <img src="./assets/hermanos.webp" alt="Diogo con sus hermanos, Jean e Imanol, en una celebración familiar" width="720" height="1280" loading="lazy">
+        <figcaption>Con Jean e Imanol</figcaption>
+      </figure>
+      <div class="about-copy reveal">
+        <h2 id="about-title">Lo que quiero<br><em>construir.</em></h2>
+        <p>Tengo 22 años. Nací el 4 de junio de 2004 en el Hospital Regional Eleazar Guzmán Barrón, en Nuevo Chimbote. Allí crecí con mis papás, Carlos Flores y Corali Vásquez, y con mis hermanos, Jean e Imanol.</p>
+        <p>Quiero ser un ingeniero capaz de resolver problemas que le importen a la gente y darle a mi familia motivos para sentirse orgullosa. Con el tiempo, también quiero ser un buen esposo y un padre presente.</p>
+        <a class="inline-link" href="./bitacora/en-la-uns.html">Mi camino en la ingeniería <span class="arrow-diagonal" aria-hidden="true"></span></a>
+      </div>
+    </section>
+
+    <section class="travel-preview section-pad" id="viajes" aria-labelledby="travel-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><h2 id="travel-title">De Áncash <em>al mundo.</em></h2><p>Lo que ya recorrimos con Angie y los destinos que queremos conocer.</p></div>
+          <a class="inline-link" href="./bitacora/viajes-con-angie.html">Ver todos los destinos <span class="arrow-diagonal" aria-hidden="true"></span></a>
+        </div>
+        <div class="travel-preview-grid reveal">
+          <a class="travel-feature" href="./bitacora/viajes-con-angie.html#ancash">
+            <img src="./assets/lugares/huaraz.webp" width="1229" height="922" alt="" loading="lazy">
+            <span><small>Viajes que ya hicimos</small><strong>Entre sierra y mar</strong></span>
+          </a>
+          <a class="travel-feature travel-feature-brazil" href="./bitacora/viajes-con-angie.html#pendientes">
+            <img src="./assets/lugares/brasil.webp" width="1280" height="792" alt="" loading="lazy">
+            <span><small>Viajes por hacer</small><strong>Un mundo por delante</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section-pad" id="galeria" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><h2 id="gallery-title">Álbum <em>personal.</em></h2><p>Cumpleaños, días de entrenamiento y momentos con Angie.</p></div>
+        </div>
+        <div class="gallery-grid reveal">
+          <a class="gallery-tile tile-brothers" href="./assets/hermanos.webp" data-caption="Con mis hermanos, Jean e Imanol"><img src="./assets/hermanos.webp" alt="Con mis hermanos, Jean e Imanol" width="720" height="1280" loading="lazy"><span>Mis hermanos</span></a>
+          <a class="gallery-tile tile-style" href="./assets/estilo.webp" data-caption="Un autorretrato de cuerpo entero"><img src="./assets/estilo.webp" alt="Un autorretrato de cuerpo entero" width="720" height="1280" loading="lazy"><span>Estilo</span></a>
+          <a class="gallery-tile tile-portrait" href="./assets/retrato.webp" data-caption="Un autorretrato frente al espejo"><img src="./assets/retrato.webp" alt="Un autorretrato frente al espejo" width="720" height="1280" loading="lazy"><span>Autorretrato</span></a>
+          <a class="gallery-tile tile-cap" href="./assets/gorra.webp" data-caption="Un retrato con gorra"><img src="./assets/gorra.webp" alt="Un retrato con gorra" width="1280" height="921" loading="lazy"><span>Con gorra</span></a>
+          <a class="gallery-tile tile-profile" href="./assets/perfil.webp" data-caption="Un autorretrato de perfil"><img src="./assets/perfil.webp" alt="Un autorretrato de perfil" width="719" height="1280" loading="lazy"><span>De perfil</span></a>
+          <a class="gallery-tile tile-angie" href="./assets/angie.webp" data-caption="Un día con Angie"><img src="./assets/angie.webp" alt="Un día con Angie" width="1280" height="960" loading="lazy"><span>Con Angie</span></a>
+          <a class="gallery-tile tile-family" href="./assets/familia.webp" data-caption="Una celebración en familia"><img src="./assets/familia.webp" alt="Una celebración en familia" width="1280" height="720" loading="lazy"><span>En familia</span></a>
+          <a class="gallery-tile tile-gym" href="./assets/entreno.webp" data-caption="Un día de entrenamiento"><img src="./assets/entreno.webp" alt="Un día de entrenamiento" width="720" height="1280" loading="lazy"><span>Entrenamiento</span></a>
+          <a class="gallery-tile tile-out" href="./assets/diogo.webp" data-caption="De camino, con el casco en la mano"><img src="./assets/diogo.webp" alt="De camino, con el casco en la mano" width="860" height="1078" loading="lazy"><span>De camino</span></a>
+        </div>
+      </div>
+      <dialog class="lightbox" aria-label="Álbum de fotos">
+        <div class="lightbox-panel">
+          <button class="lightbox-close" type="button" aria-label="Cerrar foto" autofocus>×</button>
+          <figure><img src="./assets/familia.webp" loading="lazy" alt=""><figcaption aria-live="polite"></figcaption></figure>
+          <div class="lightbox-controls"><button type="button" data-photo-step="-1" aria-label="Foto anterior">←</button><span class="photo-count" aria-hidden="true"></span><button type="button" data-photo-step="1" aria-label="Foto siguiente">→</button></div>
+        </div>
+      </dialog>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="#inicio" aria-label="Diogo Flores, inicio"><span class="brand-mark" aria-hidden="true">df.</span><span>Diogo Flores<small>Nuevo Chimbote, Perú</small></span></a>
+      <div class="footer-links"><a class="inline-link" href="./creditos.html">Créditos de imágenes</a><a class="inline-link" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a></div>
+    </div>
+  </footer>
+</body>
+</html>
